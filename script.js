@@ -1,24 +1,20 @@
-const inputs = [
-  document.querySelector(".code-1"),
-  document.querySelector(".code-2"),
-  document.querySelector(".code-3"),
-  document.querySelector(".code-4"),
-  document.querySelector(".code-5"),
-  document.querySelector(".code-6"),
-];
+// Select all the input fields
+const inputs = Array.from(document.querySelectorAll(".code"));
 
 inputs.forEach((input, index) => {
-  // Handle input event
+  // Move to the next input on typing
   input.addEventListener("input", () => {
     if (input.value && index < inputs.length - 1) {
-      inputs[index + 1].focus(); // Move to the next input
+      inputs[index + 1].focus();
     }
   });
 
-  // Handle backspace event
+  // Handle backspace key
   input.addEventListener("keydown", (e) => {
-    if (e.key === "Backspace" && !input.value && index > 0) {
-      inputs[index - 1].focus(); // Move to the previous input
+    if (e.key === "Backspace") {
+      if (!input.value && index > 0) {
+        inputs[index - 1].focus();
+      }
     }
   });
 });
