@@ -17,7 +17,7 @@ body {
       justify-content: center;
       margin-top: 20px;
 }
-.code {
+.code-1, .code-2, .code-3, .code-4, .code-5, .code-6 {
       width: 50px;
       height: 50px;
       font-size: 24px;
