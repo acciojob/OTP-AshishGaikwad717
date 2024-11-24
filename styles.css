@@ -26,7 +26,22 @@ body {
       border: 1px solid #ccc;
       border-radius: 5px;
 }
-.code:focus {
+.code-1:focus {
+      outline: 2px solid #007bff;
+}
+.code-2:focus {
+      outline: 2px solid #007bff;
+}
+.code-3:focus {
+      outline: 2px solid #007bff;
+}
+.code-4:focus {
+      outline: 2px solid #007bff;
+}
+.code-5:focus {
+      outline: 2px solid #007bff;
+}
+.code-6:focus {
       outline: 2px solid #007bff;
 }
 .note {
